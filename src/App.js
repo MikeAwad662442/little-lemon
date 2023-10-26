@@ -1,9 +1,13 @@
-
+import Footer from "./components/MasterPages/Footer";
+import Header from "./components/MasterPages/Header";
+import Main from "./components/MasterPages/Main";
 
 function App() {
   return (
     <div>
-<p>Little Lemon App</p>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
