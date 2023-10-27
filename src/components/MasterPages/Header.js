@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Logo1 from '../../assets/images/Logo1.svg'
 const Header = () => {
   return (
     <div>
-      <img src='../assets/images/Logo1.svg' alt='Logo' />
+      <img src={Logo1} alt='Logo' />
       <nav>
         <ul>
           <li><a href='home'>Home</a></li>
