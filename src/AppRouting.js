@@ -1,9 +1,12 @@
 import React from 'react'
+import Logo1 from './../assets/images/Logo1.svg'
 import {NavLink, Outlet} from "react-router-dom";
-import Logo1 from '../../assets/images/Logo1.svg'
-const Header = () => {
+// import Header from '../components/MasterPages/Header'
+
+const AppRouting = () => {
   return (
-    <header>
+      <div className="root-pages">
+             <header>
       <img src={Logo1} alt='Logo' />
       <nav>
         <ul>
@@ -15,8 +18,12 @@ const Header = () => {
           <li><NavLink to='Login'>Login</NavLink></li>
         </ul>
       </nav>
-    </header>
+          </header>
+          <main>
+              <Outlet />
+          </main>
+</div>
   )
 }
 
-export default Header
+export default AppRouting
