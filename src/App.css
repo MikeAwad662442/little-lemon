@@ -1,21 +1,23 @@
+@import './css/font.css';
+
+:root{
+  --primary: #495E57;
+  --secndery: #F4CE14;
+  --white: #ffffff;
+}
 .App {
   text-align: center;
   display: grid;
+  /* justify-content: center; */
 }
+/* === Header === */
 header{
     margin: 21px auto;
-    text-align: center;
     display: flex;
     gap: 20px;
-    justify-content: end;
-    /* text-align: center; */
-    /* grid-template-columns: repeat(2, 1fr); */
-    width: 80vw;
-
+    justify-content: center;
 }
 header img{
-  /* justify-self: start; */
-  /* margin-right: auto; */
  width: 200px;
 }
 nav ul{
@@ -25,3 +27,46 @@ nav ul{
 nav li{
     display: inline;
 }
+/* === Header === */
+/* === Home === */
+.hero{
+  height: 408px;
+  background-color: var(--primary);
+  display: flex;
+  gap: 63px;
+  justify-content: center;
+}
+.Content{
+  text-align: start;
+  width: 335px;
+}
+.Content h1{
+  color: var(--secndery);
+  margin: 0px;
+}
+.Content h2{
+  color: var(--white);
+  margin: 0px;
+}
+.Content p{
+  color: var(--white);
+}
+.Content .Link{
+  padding: 10px;
+  text-align: center;
+  background-color: var(--secndery);
+  border-radius: 15px;
+}
+.Content .Link a{
+text-decoration: none;
+color: #000000;
+}
+
+.hero img{
+  margin-top: 100px;
+  height: 375px;
+  width: 325px;
+  border: solid 1px;
+  border-radius: 25px;
+}
+/* === Home === */

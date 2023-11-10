@@ -12,8 +12,8 @@ import Home from "./components/Pages/Home";
 import About from "./components/Pages/About";
 import Menu from "./components/Pages/Menu";
 import OrderOnline from "./components/Pages/OrderOnline";
-import Reservation from "./components/Pages/Reservation";
-
+import Booking  from "./components/Pages/BookingPage ";
+import Footer from "./components/MasterPages/Footer";
 // === Router Pages === //
 import AppRouting from "./AppRouting";
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
         <Route path="about" element={<About />} />
         <Route path="menu" element={<Menu />} />
         <Route path="OrderOnline" element={<OrderOnline />} />
-        <Route path="Reservation" element={<Reservation />} />
+        <Route path="BookingPage " element={<Booking  />} />
     </Route>
   )
 
@@ -35,7 +35,8 @@ function App() {
       <RouterProvider router={router} />
       {/* <Header />
       <Main />
-      <Footer /> */}
+       */}
+      <Footer />
     </div>
   );
 }
