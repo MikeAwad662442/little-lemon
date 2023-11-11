@@ -4,6 +4,7 @@
   --primary: #495E57;
   --secndery: #F4CE14;
   --white: #ffffff;
+  --black: #000000;
 }
 .App {
   text-align: center;
@@ -57,11 +58,6 @@ nav li{
   background-color: var(--secndery);
   border-radius: 15px;
 }
-.Content .Link a{
-text-decoration: none;
-color: #000000;
-}
-
 .hero img{
   margin-top: 100px;
   height: 375px;
@@ -70,3 +66,44 @@ color: #000000;
   border-radius: 25px;
 }
 /* === Home === */
+/* === Booking=== */
+.Booking{
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 20px;
+}
+/* === Form === */
+.Booking form{
+  margin: 20px auto;
+  display: grid;
+  max-width: 200px;
+  gap: 2px;
+  justify-content: center;
+}
+label{
+  justify-self: start;
+  padding: 0px;
+}
+input, select, button {
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+.Booking form button{
+  background-color: var(--secndery);
+}
+/* === Form === */
+/* === Booking=== */
+/* === Links === */
+a{
+text-decoration: none;
+color: var(--black);
+padding: 6px 20px;
+border-radius: 10px;
+font-family: Karla16m;
+}
+a.active{
+  background-color: var(--secndery);
+}
+/* === Links === */
