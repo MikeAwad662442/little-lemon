@@ -1,10 +1,11 @@
 import React from 'react'
 import BookingForm from '../components/BookingForm'
 
-const Booking  = () => {
+const Booking = () => {
+
   return (
     <div className='Booking'>
-      <BookingForm />
+      <BookingForm/>
     </div>
   )
 }

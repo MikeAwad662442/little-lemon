@@ -1,32 +1,40 @@
 import React from 'react';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-// === All fild values that well insert === //
+// import { useAlertContext } from "./context/alertContext";
+import useSubmit from "./hooks/useSubmit";
+const BookingForm = () => {
+    const { isLoading, response, submit } = useSubmit();
+    // const { onOpen } = useAlertContext();
+    // === All fild values that well insert === //
 const initialValues = {
     resDate: '',
     resTime: '',
     guests: '',
     occasion: ''
 }
-// === Submit button Values
-const onSubmit = (values) => {
-    console.log(values)
-}
-
+// ====
 const validationSchema = Yup.object({
     resDate: Yup.date().required("Required !"),
     resTime: Yup.string().required("Required !"),
     guests: Yup.number().min(1, "Minimum number of guests 1").max(10, "Most number of guests 10").required("Required !"),
     occasion: Yup.string().required("Required !"),
 })
-const BookingForm = () => {
+    // === Submit button Values
+const onSubmit = (values) => {
+    // console.log(values)
+      submit('', values)
+      alert(JSON.stringify(values, null, 2));
+      values.preventDefult()
+
+}
     return (
         <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
             onSubmit={onSubmit}
         >
-            <Form action="">
+            <Form>
                 <label htmlFor="resDate">Choose date</label>
                 <Field type="date" id="resDate" name="resDate" />
                 <ErrorMessage name='resDate' />
