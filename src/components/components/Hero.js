@@ -9,7 +9,9 @@ const Hero = () => {
           <h2>Chicago</h2>
 
         <p className='Karla18m'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-        <button className="Link Karla18b"><Link to='BookingPage'>Reserve a tabel</Link></button>
+        <button className="Link Karla18b">
+          <Link to='BookingPage'>Reserve a tabel</Link>
+        </button>
       </div>
        <div>
  <img src={restauranfood} alt='restauranfood'/>

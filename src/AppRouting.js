@@ -3,6 +3,7 @@ import Logo1 from './assets/images/Logo1.svg'
 import { NavLink, Outlet } from "react-router-dom";
 // import Header from '../components/MasterPages/Header'
 
+import Footer from "./components/MasterPages/Footer";
 const AppRouting = () => {
   return (
     <div className="root-pages">
@@ -22,6 +23,7 @@ const AppRouting = () => {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </div>
   )
 }
