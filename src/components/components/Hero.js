@@ -3,20 +3,19 @@ import restauranfood from './../../assets/images/restauranfood.jpg'
 import { Link } from "react-router-dom";
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className='Content'>
- <h1>Little Lemon</h1>
-          <h2>Chicago</h2>
-
+        <h1>Little Lemon</h1>
+        <h2>Chicago</h2>
         <p className='Karla18m'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
         <button className="Link Karla18b">
           <Link to='BookingPage'>Reserve a tabel</Link>
         </button>
       </div>
-       <div>
- <img src={restauranfood} alt='restauranfood'/>
+      <div>
+        <img src={restauranfood} alt='Restauran Food' />
       </div>
-  </div>
+    </section>
   )
 }
 
